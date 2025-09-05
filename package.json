@@ -45,7 +45,6 @@
     "react-dom": "^19.1.1",
     "react-hook-form": "^7.62.0",
     "react-resizable-panels": "^3.0.5",
-    "react-scripts": "^0.0.0",
     "recharts": "^3.1.2",
     "tailwind-merge": "^3.3.1",
     "tailwindcss-animate": "^1.0.7",
@@ -79,6 +78,7 @@
     "@types/react-dom": "^19.1.9",
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.6",
+    "react-scripts": "^5.0.1",
     "tailwindcss": "^4.1.13"
   }
 }
