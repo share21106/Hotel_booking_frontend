@@ -6,11 +6,12 @@
       "dom.iterable",
       "esnext"
     ],
+    "tsBuildInfoFile": "./node_modules/typescript/tsbuildinfo",
+
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
     "module": "esnext",
@@ -20,7 +21,10 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "build", "dist"],
+  "paths": {
+      "@/*": ["./*"],
+  }
+
 }
