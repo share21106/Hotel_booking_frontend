@@ -1,4 +1,4 @@
-import { Switch, Route } from "wouter";
+import { BrowserRouter, Route,Routes  } from "react-router-dom";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "./components/ui/toaster";
@@ -10,12 +10,14 @@ import { Homepage } from "./pages/Homepage";
 
 function Router() {
   return (
-    <Switch>
+    <BrowserRouter>
+    <Routes>
       {/* Add pages below */}
-      <Route path="/" component={Homepage} />
+      <Route path="/" element={<Homepage/>} />
       {/* Fallback to 404 */}
-      <Route component={NotFound} />
-    </Switch>
+      <Route element={<NotFound/>} />
+    </Routes>
+    </BrowserRouter>
   );
 }
 
